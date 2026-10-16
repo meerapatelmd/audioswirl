@@ -1,4 +1,4 @@
-# Auditory Training — Looping Read-Along Player
+# audioswirl — A Looping Read-Along Player
 
 A mobile-friendly, single-page auditory-training player for practicing similar-sounding consonants and vowels. Choose an exercise, watch each word highlight while it is spoken, or switch to audio-only looping for listening with your iPhone locked.
 
