@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-title" content="Auditory Training"/><title>Auditory Training · Background Listening</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-title" content="audioswirl"/><title>audioswirl · Background Listening</title><style>
 :root {color-scheme:light;--ink:#182a45;--muted:#687994;--bg:#f4f7fb;--card:#fff;--accent:#2666c5;--line:#dae4f2}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 main{max-width:900px;margin:0 auto;padding:24px 14px 60px}h1{font-size:1.7rem;line-height:1.2;margin:0 0 6px}h2{font-size:1.14rem;margin:0 0 12px}p{margin:0 0 12px;color:var(--muted)}
@@ -22,7 +22,7 @@ video{display:block;width:100%;border-radius:12px;background:#111;max-height:540
 .modebar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.modebar button{flex:1;min-width:130px;background:#f0f4fb;color:#204c87;border:1px solid #a6bddc}.modebar button.active{background:#1556af;color:white;border-color:#1556af}
 audio{width:100%;display:block;margin:0 0 12px}.audioPoster{border-radius:13px;background:#eaf1ff;padding:24px 14px;text-align:center;margin:2px 0 12px}.audioPoster strong{font-size:1.1rem;display:block;color:#14468a}.audioPoster span{font-size:2.6rem;display:block}.audioPoster small{display:block;margin-top:8px;color:#4b6282}
 </style></head><body><main>
-<h1>Auditory training</h1><p class="intro">Choose an exercise to play and loop, or select the full read-along sequence. Your totals appear on each button.</p>
+<h1>audioswirl</h1><p class="intro">Choose an exercise to play and loop, or select the full read-along sequence. Your totals appear on each button.</p>
 <section class="card hero" aria-label="Exercise totals and video selection">
  <h2>Exercise totals · Tap to play</h2>
  <div class="exercise-grid">
@@ -185,7 +185,7 @@ function choose(i){
     audioPlayer.loop=true; // Crucial: hardware/native looping continues when JS sleeps.
     if('audioSession' in navigator){try{navigator.audioSession.type='playback';}catch(e){}}
     if('mediaSession' in navigator){
-      try{navigator.mediaSession.metadata=new MediaMetadata({title:selected<0?'All 8 sound pairs':SECTIONS[selected].id+' auditory training',artist:'Auditory Training',album:'Background Listening'});}catch(e){}
+      try{navigator.mediaSession.metadata=new MediaMetadata({title:selected<0?'All 8 sound pairs':SECTIONS[selected].id+' auditory training',artist:'audioswirl',album:'Background Listening'});}catch(e){}
     }
   }
   video.load();
